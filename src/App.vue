@@ -16,7 +16,7 @@ const wakeLock = useWakeLockStore()
   </main>
 
   <video v-if="wakeLock.enabled" class="video-player" controls loop autoplay>
-    <source src="/one-second-video.mp4" type="video/mp4">
+    <source src="/one-second-video.webm" type="video/webm">
   </video>
 </template>
 
@@ -33,8 +33,7 @@ input[type='checkbox'] {
 }
 
 .video-player {
-  position: absolute;
-  top: -500px;
+  display: none;
 }
 
 main {
